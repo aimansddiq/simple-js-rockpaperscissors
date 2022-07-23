@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>JavaScript Rock Paper Scissors</title>
+</head>
+
+<body>
+    <div id="app">
+
+
+        <div id="button">
+            <h1>Player pick: </h1>
+            <button onclick="handleClick(this)" value="rock"><i class="fas fa-hand-rock"></i> </button>
+            <button onclick="handleClick(this)" value="paper"><i class="fa fa-hand-paper" aria-hidden="true"></i>
+            </button>
+            <button onclick="handleClick(this)" value="scissors"><i class="fa fa-hand-scissors" aria-hidden="true"></i>
+            </button>
+        </div>
+
+        <div id="ai">
+            <h1>AI pick: </h1>
+            <button class="ai_button" value="rock"><i class="fas fa-hand-rock"></i> </button>
+            <button class="ai_button" value="paper"><i class="fa fa-hand-paper" aria-hidden="true"></i> </button>
+            <button class="ai_button" value="scissors"><i class="fa fa-hand-scissors" aria-hidden="true"></i> </button>
+        </div>
+
+        <div id="result">
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
